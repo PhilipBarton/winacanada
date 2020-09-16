@@ -698,13 +698,15 @@ visibility: hidden;
 }
 #video {
   position: fixed;
- right: 0;
- bottom: 0;
- min-width: 100%;
- min-height: 100%;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
   width: auto;
-  height: auto;
+  height: -webkit-fill-available;
   z-index: -100;
+  object-fit: fill;
+  filter: contrast(0.4);
 }
 @media (min-width: 850px) { 
   #wrapper {
@@ -743,10 +745,19 @@ h1 {
   width: 100%;
   height: 200px !important;
 }
+h1 {
+  font-size: 8vw!important;
+  font-weight: 800;
+  z-index: 2;
+}
+h2{
+  font-size: 7vw!important;
+}
 }
 .navbar-default{
   background:transparent;
   border:none !important;
 }
+
 
  

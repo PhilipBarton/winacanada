@@ -14,8 +14,9 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@423&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
-<body data-spy="scroll" data-target="#navbar-example">
+<body class="" data-spy="scroll" data-target="#navbar-example">
 <!-- Load Facebook SDK for JavaScript -->
 <div id="fb-root"></div>
 <script>
@@ -45,7 +46,9 @@ theme_color="#ffc300">
 			<img class="img-fluid" style="width: 10vw; height: auto;" src="./Img/Logo-White-16-bit.png">
 		</a>
 		<button class="navbar-toggler" type="button" data-toggle="modal" data-target="#exampleModal" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
+			<span class="navbar-toggler-icon">
+				<i class="fa fa-bars text-white" aria-hidden="true"></i>
+			</span>
 		  </button>
 			
 		<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
@@ -126,10 +129,9 @@ theme_color="#ffc300">
 		</div>
 		<div class="modal-body">
 			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-		
+		<div class="animate__slideInLeft">
 				<li class="nav-item">
-			
-					<a class=" nav-link active  text-center mob-mav-link" href="#">
+							<a class=" nav-link active  text-center mob-mav-link" href="#">
 						<span>HOME</span>
 					</a>
 				  </li>
@@ -164,6 +166,7 @@ theme_color="#ffc300">
 						<span>CAREERS</span>
 					</a>
 			  </li>
+			</div>
 				</ul>
 
 
@@ -173,42 +176,28 @@ theme_color="#ffc300">
 	</div>
   </div>
 
+<div class="animate__slideInRight">
 	  <header class="masthead cc_cursor  p-3 " id="startchange">
 		<video autoplay loop id="video" muted plays-inline>
 			<source src="./WHITE LOGO.mp4" type="video/mp4">
 		  </video>
-		  <div class="container">
-			  <div class="content">
-			  <div class="row d-flex align-items-center">
-				<div class="col ml-3">
-					
+		  <div class="container d-flex h-60 align-items-center">
+			<div class="mx-auto text-center">
 			
-				</div>
-				  <div class="col-md-5 ">
-						<div class="container-fluid">
-							<h1 class="text-center text-blue">
-								Welcoming Intercultural Newcomers Association
-							</h1>	
-					<p class="text-white text-justify text-center lead">
-						<b class="text-white">WINA’s mission is</b> 
-						to enrich newcomers’ lives through the artistic, 
-						cultural activities and enhancing their social <br/>
-						relationship with an Intercultural focus with pride and dignity. </p>
-				<div id="wrapper"> 
-				<button type="button" class="btn  btn-outline-blue rounded-pill">
-					<a class="text-white" href="about.html">
-					Learn More
-					</a>
-				</button>
-		</div>
-		</div>
-	
-				  </div>
-			
-			  </div>
+					<h1 class="mx-auto my-0 text-blue text-uppercase">Welcoming Intercultural Newcomers Association</h1>
+				<h2 class="text-white-50 mx-auto mt-2 mb-5"><b class="text-white">our organization's</b> 
+					goal is to help newcomers find success
+					and security in Canada with fun events and essential services 
+					that not only help them survive but thrive</h2>
+					<button type="button" class="btn  btn-outline-blue rounded-pill">
+						<a class="text-white" href="about.html">
+						Learn More
+						</a>
+					</button>
 			</div>
 		</div>
 		</header>
+	</div>
 		<section id="our mission">
 			<div class="container-fluid">
 				
@@ -355,7 +344,7 @@ theme_color="#ffc300">
    $(document).scroll(function() { 
       scroll_start = $(this).scrollTop();
       if(scroll_start > offset.top) {
-          $(".navbar-default").css('background-color', 'blue');
+          $(".navbar-default").css('background-color', '#F03567');
        } else {
           $('.navbar-default').css('background-color', 'transparent');
        }

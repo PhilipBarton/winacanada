@@ -706,7 +706,7 @@ visibility: hidden;
   height: auto;
   z-index: -100;
 }
-@media (min-width: 750px) { 
+@media (min-width: 850px) { 
   #wrapper {
     width: 100%;
     height: 4vw;
@@ -722,4 +722,28 @@ h1 {
 .lead{
   font-size: 1.5vw!important;
 }
- }
+.moveup{
+  position: absolute;
+  bottom: 25vw;
+  padding-right: 0vw!important;
+  left: 60vw;
+}
+.carouseldesktop{
+  width:100%; 
+  height: 500px !important;
+}
+@media screen(min-width:700px) {
+  .modal-body{
+  top: -50vw!important;
+}
+}
+}
+@media (max-width:750px){
+.carouselmobile{
+  width: 100%;
+  height: 200px !important;
+}
+}
+
+
+ 

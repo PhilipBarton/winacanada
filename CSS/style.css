@@ -744,6 +744,9 @@ h1 {
   height: 200px !important;
 }
 }
-
+.navbar-default{
+  background:transparent;
+  border:none !important;
+}
 
  

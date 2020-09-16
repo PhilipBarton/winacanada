@@ -356,12 +356,13 @@ template {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-weight: 500;
+  font-weight: 800;
   line-height: 1.2;
 }
 
 h1, .h1 {
   font-size: 2.5rem;
+
 }
 
 h2, .h2 {
@@ -6095,7 +6096,7 @@ a.close.disabled {
   flex: 1 1 auto;
   padding: 50vw;
   left: -23vw!important;
-  top: -20vw!important;
+  top: -50vw!important;
 }
 
 .modal-footer {

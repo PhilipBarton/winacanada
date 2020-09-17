@@ -135,7 +135,7 @@ p{
   }
 body{
     font-family: 'futura'!important;
-    background-color: #e85e34!important;
+    background-color: #127cff!important;
     overflow-x: hidden;
     background-attachment: fixed;
     background-size: cover;
@@ -493,7 +493,7 @@ p {
   }
   
   .blue{
-    background-color: #77acd4;
+    background-color: #127cff;
   }
   .blue img{
      mix-blend-mode: multiply;
@@ -650,7 +650,7 @@ p {
     color:#e6243f;
   }
   .text-blue{
-color:blue;
+color:#127cff;
   }
   .text-pink{
       color:#F03567;
@@ -757,6 +757,12 @@ h2{
 .navbar-default{
   background:transparent;
   border:none !important;
+}
+.signature{
+  font-family: 'Dawning of a New Day', cursive;
+}
+#our-mission{
+  background-color:#127cff!important;
 }
 
 

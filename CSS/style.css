@@ -685,7 +685,8 @@ color:#127cff;
   height:100%;
 }
 .mob-mav-link{
-  font-size: 10vw!important;
+  font-size: 8vw!important;
+  
 }
 .mob-dropdown-link{
   font-size: 6vw!important;
@@ -724,6 +725,9 @@ h1 {
 .lead{
   font-size: 1.5vw!important;
 }
+.footer-logo{
+  width:5vw!important;
+}
 .moveup{
   position: absolute;
   bottom: 25vw;
@@ -745,6 +749,15 @@ h1 {
   width: 100%;
   height: 200px !important;
 }
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: initial!important;
+  flex-wrap: initial!important;
+  margin-right: -15px;
+  margin-left: -15px;
+}
 h1 {
   font-size: 8vw!important;
   font-weight: 800;
@@ -752,6 +765,27 @@ h1 {
 }
 h2{
   font-size: 7vw!important;
+}
+.h5, h5 {
+  font-size: 5vw!important;
+}
+.p-footer-big-font{
+  font-size: 4vw!important;
+}
+.footer-logo{
+  width:30vw!important;
+}
+#video {
+  position: fixed;
+  left: -25vw;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: -webkit-fill-available;
+  z-index: -100;
+  object-fit: fill;
+  filter: contrast(0.4);
 }
 }
 .navbar-default{
@@ -762,8 +796,39 @@ h2{
   font-family: 'Dawning of a New Day', cursive;
 }
 #our-mission{
-  background-color:#127cff!important;
+  background-color: #127cff!important;
+  height: 100%!important;
+  background-size: cover;
+}
+.icon{
+    display: inline-block!important;
+    height: 30px!important;
+    width: 30px!important;
+    vertical-align: middle;
+    margin-right: 5px!important;
 }
 
+.social {
+  margin-top: 1rem;
+}
+.social a {
+  text-align: center;
+  height: 3rem;
+  width: 3rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+  line-height: 3rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+.social a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+.social a:active {
+  color: #fff;
+}
+.slide-top{animation:slide-top .5s cubic-bezier(.25,.46,.45,.94) both}
+.flip-2-hor-top-1{animation:flip-2-hor-top-1 .5s cubic-bezier(.455,.03,.515,.955) both}
 
- 
+
+ @keyframes flip-2-hor-top-1{0%{transform:translateY(0) rotateX(0);transform-origin:50% 0}100%{transform:translateY(-100%) rotateX(-180deg);transform-origin:50% 100%}}
+ @keyframes slide-top{0%{transform:translateY(0)}100%{transform:translateY(-10px)}}

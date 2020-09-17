@@ -1,0 +1,15 @@
+<div class=" d-flex justify-content-center mr-auto btn-group btn-group-toggle" data-toggle="buttons">
+		<label class="btn btn-secondary active">
+			<i class="fa fa-facebook" aria-hidden="true">
+			</i>
+		  <input type="radio" name="options" id="option1" checked> 
+		</label>
+		<label class="btn btn-secondary">
+			<i class="fa fa-instagram" aria-hidden="true"></i>
+		  <input type="radio" name="options" id="option2">
+		</label>
+		<label class="btn btn-secondary">
+			<i class="fa fa-twitter" aria-hidden="true"></i>
+		  <input type="radio" name="options" id="option3"> 
+		</label>
+	  </div>

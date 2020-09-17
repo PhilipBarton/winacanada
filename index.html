@@ -9,12 +9,13 @@
 		<link rel='shortcut icon' type='image/x-icon' href="./Img/favicon.ico">
 <link rel="stylesheet" href="CSS/style.css">
 <link rel="stylesheet" href="./CSS/mdb.css">
+<link rel="stylesheet" href="./CSS/mobilemenu.css">
 <link rel="stylesheet" href="./CSS/bootstrap.css" crossorigin="anonymous">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@423&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Dawning+of+a+New+Day&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
 </head>
 <body class="" data-spy="scroll" data-target="#navbar-example">
@@ -46,11 +47,13 @@ theme_color="#ffc300">
 		<a class="navbar-brand" href="#">
 			<img class="img-fluid" style="width: 10vw; height: auto;" src="./Img/Logo-White-16-bit.png">
 		</a>
+		<div id="nav-toggle">
 		<button class="navbar-toggler" type="button" data-toggle="modal" data-target="#exampleModal" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon">
 				<i class="fa fa-bars text-white" aria-hidden="true"></i>
 			</span>
 		  </button>
+		</div>
 			
 		<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 		  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -118,68 +121,72 @@ theme_color="#ffc300">
 	  </nav>
 	  <!-- Button trigger modal -->
 
-
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	<div class="modal-dialog">
-	  <div class="modal-content">
-		<div class="modal-header">
-			<a class="navbar-brand" href="#">
-				<img class="img-fluid" style="width: 20vw; height: auto;" src="./Img/Logo-Black-16-bit.png">
-			</a>
-		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-			<span aria-hidden="true">&times;</span>
-		  </button>
-		  
-		</div>
-		<div class="modal-body">
-			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-		<div class="animate__slideInLeft">
+<!--mobile navigation-->
+	<div id="top-head-inner">
+		<nav id="global-nav">
+			<ul>
+			
 				<li class="nav-item">
-							<a class=" nav-link active  text-center mob-mav-link" href="#">
+		
+					<a class="nav-link active text-black" href="./index.html">
 						<span>HOME</span>
 					</a>
 				  </li>
 				  <li class="nav-item dropdown "  data-toggle="tooltip" data-placement="top" title="Get to know us" >
-					<a class="nav-link text-black dropdown-toggle  active text-center mob-mav-link" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+					<a class="nav-link dropdown-toggle" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
 					  ABOUT
 					</a>
-					<div class="collapse justify-content-center" id="navbarToggleExternalContent" aria-labelledby="navbarDropdown">
-					  <a class="nav-link text-center text-black mob-dropdown-link " href="./ourservice.html">OUR SERVICES</a>
-					  <a class="nav-link text-center text-black mob-dropdown-link" href="#">OUR HISTORY</a>
-					  <a class="nav-link text-center text-black mob-dropdown-link" href="#">OUR TEAM</a>
+					<div class="collapse" id="navbarToggleExternalContent">
+					  <a class="dropdown-item nav-link text-black " href="./ourservice.html">OUR SERVICES</a>
+					  <a class="dropdown-item nav-link text-black " href="#">OUR HISTORY</a>
+					  <a class="dropdown-item nav-link text-black " href="#">OUR TEAM</a>
 					</div>
 				  </li>
 				  <li class="nav-item">
-					<a class="nav-link text-center text-black mob-mav-link " data-toggle="tooltip" data-placement="top" title="This is where the party is" href="events.html">
+					<a class="nav-link " data-toggle="tooltip" data-placement="top" title="This is where the party is" href="events.html">
+						<i class="fa fa-calendar" aria-hidden="true"></i>
 						<span>EVENTS</span>
 					</a>
 			  </li>
-				  <li class="nav-item ">
-						<a class="nav-link text-center text-black mob-mav-link " data-toggle="tooltip" data-placement="top" title="You know you want to..." href="about.html">
-						<span>DONATE</span>
-					</a>
+				  <li class="nav-item"></li>
+						<a class="nav-link " data-toggle="tooltip" data-placement="top" title="You know you want to..." href="about.html">
+						<i class="fa fa-heart" aria-hidden="true"></i>
+						DONATE
+						</a>
 				  </li>
-	
 				  <li class="nav-item">
-						<a data-toggle="tooltip" data-placement="top" title="Tell us what is on your mind don't be shy" class="nav-link text-center text-black mob-mav-link" href="events.html">
+					<a class="nav-link " data-toggle="tooltip" data-placement="top" title="We need all the help we can get" href="about.html">
+						<i class="fa fa-briefcase" aria-hidden="true"></i>
+						CAREERS
+				</a>
+			  </li>
+				  <li class="nav-item">
+						<a data-toggle="tooltip" data-placement="top" title="Tell us what is on your mind don't be shy" class="nav-link " href="events.html">
+							<i class="fa fa-phone" aria-hidden="true"></i>
 							<span>CONTACT</span>
 						</a>
 				  </li>
 				  <li class="nav-item">
-					<a data-toggle="tooltip" data-placement="top" title="Tell us what is on your mind don't be shy" class="nav-link text-center text-black mob-mav-link" href="events.html">
-						<span>CAREERS</span>
+					<a class="nav-link" href="https://www.facebook.com/winacanada/">
+					<i class="fa fa-facebook" aria-hidden="true">
+					 </i>
+					 </a>
+					</li>
+					<li class="nav-item">	
+					<a class="nav-link" href="https://www.instagram.com/winacanada/">
+					<i class="fa fa-instagram" aria-hidden="true"></i>
 					</a>
-			  </li>
-			</div>
-				</ul>
-
-
-		
-		</div>
-	  </div>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="https://www.instagram.com/winacanada/">
+					<i class="fa fa-twitter" aria-hidden="true"></i>
+					</a>
+					</li>
+			</ul>
+		</nav>
 	</div>
-  </div>
+<!--end of mobile navigation-->
+  
 
 <div class="animate__slideInRight">
 	  <header class="masthead cc_cursor  p-3 " id="startchange">
@@ -189,32 +196,31 @@ theme_color="#ffc300">
 		  <div class="container d-flex h-100 align-items-center">
 			<div class="mx-auto text-center">
 				<h1 class="mx-auto my-0 text-uppercase">  A helping hand for those who need it</h1>
-				<h2 class="text-white-50 signature mx-auto mt-2 mb-5">Welcoming Intercultural Newcomers Association</h2>
+				<h2 class="text-white signature mx-auto mt-2 mb-5">Welcoming Intercultural Newcomers Association</h2>
 				<a class="btn  btn-outline-blue rounded-pill js-scroll-trigger" href="#our-mission">Learn More</a>
 			</div>
 		</div>
 		</header>
 	</div>
-		<section id="our-mission">
-			<div class="container d-flex h-100 align-items-center">
-				
-				  
-				<div class="mx-auto text-center">
-<h1 class="mx-auto my-0 text-blue text-uppercase">our goal</h1>
-<p class="text-white-50 mx-auto mt-2 mb-5"><b class="text-white">our organization's</b> 
-	goal is to help newcomers find success
-	and security in Canada with fun events and essential services 
-	that not only help them survive but thrive</p>
-
-					
-</div>	
-				
-			</div>
-		</section>
-		
+		<section class="about-section text-center" id="our-mission">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mr-3 p-5 mx-auto">
+                        <h2 class="text-white mb-4">OUR GOAL</h2>
+                        <h5 class="text-white-50">
+							<b class="text-white">Our organization's</b> 
+							goal is to help newcomers find success
+							and security in Canada with fun events and essential services 
+							that not only help them survive but thrive</p>
+						</h5>
+                    </div>
+                </div>
+                <img class="img-fluid" src="assets/img/ipad.png" alt="" />
+            </div>
+        </section>
 
 <!-- Footer -->
-<footer class="page-footer font-small blue pt-4">
+<footer class="page-footer font-small pt-4">
 
 	<!-- Footer Links -->
 	<div class="container-fluid text-center text-md-left">
@@ -226,8 +232,12 @@ theme_color="#ffc300">
 		<div class="col-md-6 mt-md-0 mt-3">
   
 		  <!-- Content -->
-		  <h5 class="text-uppercase">Footer Content</h5>
-		  <p>Here you can use rows and columns to organize your footer content.</p>
+		  <!-- Image and text -->
+
+
+	  <img src="./Img/website logo.png" class=" footer-logo photo d-inline-block align-top" alt="" loading="lazy">
+	
+		  <p class="p-footer-big-font">Here you can use rows and columns to organize your footer content.</p>
   
 		</div>
 		<!-- Grid column -->
@@ -360,6 +370,14 @@ theme_color="#ffc300">
     }
 });
 
+</script>
+<script>
+    $('body').scrollspy({ target: '#anotherspy' })
+</script>
+<script>
+	$('#nav-toggle').click(function(){
+  $('body').toggleClass('open');
+});
 </script>
 
 </body>

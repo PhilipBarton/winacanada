@@ -7,7 +7,7 @@
 		<meta name="description" content="WINA's mission is to enrich newcomers' lives through the artistic, cultural activities and enhancing their social relationship with an intercultural focus with pride and dignity.">
 		<meta name="keywords" content="WINA, WINA Canada, winacanada, Welcoming Intercultural Newcomers Association">
 		<link rel='shortcut icon' type='image/x-icon' href="./Img/favicon.ico">
-<link rel="stylesheet" href="CSS/style.css">
+<link rel="stylesheet" href="./css/style.css">
 <link rel="stylesheet" href="./CSS/mdb.css">
 <link rel="stylesheet" href="./CSS/mobilemenu.css">
 <link rel="stylesheet" href="./CSS/bootstrap.css" crossorigin="anonymous">
@@ -184,23 +184,14 @@ width="50px" height="50px" viewBox="0 0 32 22.5" enable-background="new 0 0 32 2
 							<span>CONTACT</span>
 						</a>
 				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="https://www.facebook.com/winacanada/">
-					<i class="fa fa-facebook" aria-hidden="true">
-					 </i>
-					 </a>
-					</li>
-					<li class="nav-item">	
-					<a class="nav-link" href="https://www.instagram.com/winacanada/">
-					<i class="fa fa-instagram" aria-hidden="true"></i>
-					</a>
-					</li>
-					<li class="nav-item">
-					<a class="nav-link" href="https://www.instagram.com/winacanada/">
-					<i class="fa fa-twitter" aria-hidden="true"></i>
-					</a>
-					</li>
+					<div class="btn-group" role="group" aria-label="Basic example">
+					    <a class="p-1"  href="https://www.facebook.com/winacanada/"> <i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+						<a class="p-1"   href="https://www.instagram.com/winacanada/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						<a class="p-1" href="https://www.twitter.com/winacanada/"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+						<a class="p-1" href="https://www.twitter.com/winacanada/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+					  </div>
 			</ul>
+			
 		</nav>
 	</div>
 <!--end of mobile navigation-->
@@ -213,23 +204,20 @@ width="50px" height="50px" viewBox="0 0 32 22.5" enable-background="new 0 0 32 2
 		  </video>
 		  <div class="container d-flex h-100 align-items-center">
 			<div class="mx-auto text-center">
-				<h1 class="mx-auto my-0 text-uppercase">  A helping hand for those who need it</h1>
+				<h1 class="mx-auto my-0 text-uppercase ">Embracing our differences, changing the world</h1>
 				<h2 class="text-white signature mx-auto mt-2 mb-5">Welcoming Intercultural Newcomers Association</h2>
 				<a class="btn  btn-outline-blue rounded-pill js-scroll-trigger" href="#our-mission">Learn More</a>
 			</div>
 		</div>
 		</header>
 	</div>
-		<section class="about-section text-center" id="our-mission">
+		<section class="about-section text-center  animated" id="our-mission">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 mr-3 p-5 mx-auto">
-                        <h2 class="text-white mb-4">OUR GOAL</h2>
+                        <h2 class="text-white text-uppercase mb-4 ">OUR GOAL</h2>
                         <h5 class="text-white-50">
-							<b class="text-white">Our organization's</b> 
-							goal is to help newcomers find success
-							and security in Canada with fun events and essential services 
-							that not only help them survive but thrive</p>
+							Wina is an organization passionate about helping newcomers find success and security in Canada with fun events and essential services that not only help them survive but thrive.Since its inception, WINA has evolved over the past 15 years from simply organizing Annual Newcomer Students’ BBQs to now respond to the challenges of international newcomer students in the Halifax Regional Municipality (HRM); to ensure students' success and their integration in Canada.
 						</h5>
                     </div>
                 </div>
@@ -297,26 +285,12 @@ width="50px" height="50px" viewBox="0 0 32 22.5" enable-background="new 0 0 32 2
   
 		  <!-- Links -->
 		  <h5 class="text-uppercase">SOCIAL MEDIA</h5>
-  
-		  <ul class="list-unstyled">
-			<li>
-				<i class="fa fa-facebook-official" aria-hidden="true"></i>
-			  <a href="#!">FACEBOOK</a>
-			</li>
-			<li>
-				<i class="fa fa-instagram" aria-hidden="true"></i>
-			  <a href="#!">INSTAGRAM</a>
-			</li>
-			<li>
-				<i class="fa fa-twitter-square" aria-hidden="true"></i>
-			  <a href="#!">TWITTER</a>
-			</li>
-			<li>
-				<i class="fa fa-linkedin-square" aria-hidden="true"></i>
-			  <a href="#!">LINKEDIN</a>
-			</li>
-		  </ul>
-  
+		  <div class="btn-group" role="group" aria-label="Basic example">
+			<a class="p-1 social-icons"  href="https://www.facebook.com/winacanada/"> <i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+			<a class="p-1 social-icons"   href="https://www.instagram.com/winacanada/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+			<a class="p-1 social-icons" href="https://www.twitter.com/winacanada/"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+			<a class="p-1 social-icons" href="https://www.twitter.com/winacanada/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+		  </div>
 		</div>
 		<!-- Grid column -->
   
@@ -386,6 +360,22 @@ width="50px" height="50px" viewBox="0 0 32 22.5" enable-background="new 0 0 32 2
        }
    });
     }
+});
+
+</script>
+<script>
+$(window).scroll(function () {
+    $('.animated').each(function () {
+        var imagePos = $(this).offset().top;
+        var imageHeight = $(this).height();
+        var topOfWindow = $(window).scrollTop();
+
+        if (imagePos < topOfWindow + imageHeight && imagePos + imageHeight > topOfWindow) {
+            $(this).addClass("slideInDown");
+        } else {
+            $(this).removeClass("slideInDown");
+        }
+    });
 });
 
 </script>

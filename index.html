@@ -28,7 +28,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Dawning+of+a+New+Day&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
 </head>
-<body class="" data-spy="scroll" data-target="#navbar-example">
+<body class="overflow-x-auto" data-spy="scroll" data-target="#navbar-example" >
 	<!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHJBQBC"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -57,6 +57,7 @@
   page_id="110143867343255"
 theme_color="#ffc300">
 </div>
+<!--Desktop Navigation-->
 	<nav class="navbar sticky-top navbar-expand-lg navbar-default">
 		<a class="navbar-brand" href="#">
 			<img class="img-fluid" style="width: 10vw; height: auto;" src="./Img/Logo-White-16-bit.png">
@@ -150,7 +151,7 @@ width="50px" height="50px" viewBox="0 0 32 22.5" enable-background="new 0 0 32 2
 
 		</div>	
 	  </nav>
-	  <!-- Button trigger modal -->
+<!--End Of Desktop Navigation-->
 
 <!--mobile navigation-->
 	<div id="top-head-inner">
@@ -217,29 +218,22 @@ width="50px" height="50px" viewBox="0 0 32 22.5" enable-background="new 0 0 32 2
 		  </video>
 		  <div class="container d-flex h-100 align-items-center">
 			<div class="mx-auto text-center">
-				<h1 class="mx-auto my-0 text-uppercase ">Embracing our differences, changing the world</h1>
+				<h2 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
+					Embracing our differences
+								  <br class="xl:hidden">
+								  <span class="text-blue-600">changing the world</span>
+								</h2>
 				<h2 class="text-white signature mx-auto mt-2 mb-5">Welcoming Intercultural Newcomers Association</h2>
-				<a class="btn  btn-outline-blue rounded-pill js-scroll-trigger" href="#our-mission">Learn More</a>
+				<div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-center ">
+					<a href="./about.html" class=" bg-white hover:bg-gray-100 text-black font-semibold py-2 px-4 border border-gray-400 rounded shadow transition ease-in duration-700">
+						Learn About Us
+					</a>
+					  
 			</div>
 		</div>
 		</header>
-	</div>
-		<section class="about-section text-center  " id="our-mission">
-            <div class="container">
-                <div class="row animated">
-                    <div class="col-lg-8 mr-3 p-5 mx-auto">
-                        <h2 class="text-white text-uppercase mb-4 ">OUR GOAL</h2>
-                        <h5 class="text-white-50">
-							Wina is an organization passionate about helping newcomers find success and security in Canada with fun events and essential services that not only help them survive but thrive.Since its inception, WINA has evolved over the past 15 years from simply organizing Annual Newcomer Students’ BBQs to now respond to the challenges of international newcomer students in the Halifax Regional Municipality (HRM); to ensure students' success and their integration in Canada.
-						</h5>
-                    </div>
-                </div>
-                <img class="img-fluid" src="assets/img/ipad.png" alt="" />
-            </div>
-        </section>
-
 <!-- Footer -->
-<footer class="page-footer font-small pt-4">
+<footer class="w-full px-4 py-6 shadow-sm bg-beige cc_cursor bg-wina-blue">
 
 	<!-- Footer Links -->
 	<div class="container-fluid text-center text-md-left">
@@ -339,6 +333,7 @@ width="50px" height="50px" viewBox="0 0 32 22.5" enable-background="new 0 0 32 2
 	  }
 	}
 	</script>
+	<script src="./node_modules/tailwindcss/scripts/build.js"></script>
 	<script src="JS/modules/animations-extended.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -367,7 +362,7 @@ width="50px" height="50px" viewBox="0 0 32 22.5" enable-background="new 0 0 32 2
    $(document).scroll(function() { 
       scroll_start = $(this).scrollTop();
       if(scroll_start > offset.top) {
-          $(".navbar-default").css('background-color', '#2196f3');
+          $(".navbar-default").css('background-color', '#228AB6');
        } else {
           $('.navbar-default').css('background-color', 'transparent');
        }

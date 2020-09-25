@@ -828,7 +828,7 @@ font-size: 5vw;
   font-family: 'Dawning of a New Day', cursive;
 }
 #our-mission{
-  background-color: #127cff!important;
+  background-color: #228AB6!important;
   height: 100%!important;
   background-size: cover;
 }
@@ -885,4 +885,42 @@ font-size: 5vw;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+#testimonial{
+  background-color:#FFA947!important;
+}
+.services-img{
+  object-fit: scale-down;
+}
+.bg-wina-purple{
+  background-color:#AB2949;
+}
+.bg-wina-blue{
+  background-color: rgb(34, 138, 182);
+}
+#bg-services{
+  position: relative;
+}
+#bg-services::before{
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-size: cover;
+  filter: contrast(0.5);
+}
+.bg-services-inside{
+  position: relative;
+}
+#bg-services.bg-employ::before{
+  background-image: url(../Img/employment-service.jpg);
+}
+#bg-services.bg-settlement::before{
+  background-image: url(../Img/settlement.jpg);
+}
+#bg-services.bg-wellness::before{
+  background-image: url(../Img/wellness.jpg);
+}
+#bg-services.bg-events::before{
+  background-image: url(../Img/events.jpg);
 }

@@ -7,7 +7,7 @@
     height: 100%;
   }
   #video {
-    position: fixed;
+    position: initial;
    right: 0;
    bottom: 0;
    min-width: 100%;

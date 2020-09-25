@@ -7,6 +7,11 @@
 :root {
     --web-view-ids: Home_2;
 }
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
 * {
     margin: 0;
     padding: 0;
@@ -135,7 +140,7 @@ p{
   }
 body{
     font-family: 'futura'!important;
-    background-color: #127cff!important;
+    background-color:#228AB6!important;
     overflow-x: hidden;
     background-attachment: fixed;
     background-size: cover;
@@ -860,3 +865,24 @@ font-size: 5vw;
  @keyframes flip-2-hor-top-1{0%{transform:translateY(0) rotateX(0);transform-origin:50% 0}100%{transform:translateY(-100%) rotateX(-180deg);transform-origin:50% 100%}}
  @keyframes slide-top{0%{transform:translateY(0)}100%{transform:translateY(-10px)}}
 
+.register-poster{
+  width:inherit;
+}
+.donation-box {
+  padding: 18px 27px;
+  border-radius: 7px;
+  display: block;
+  overflow: hidden;
+  text-align: left;
+    display: flex;
+}
+.w-70{
+  width:70%;
+}
+.donate-background{
+  background-image: url(../Img/donate2.jpg);
+  background-attachment: inherit;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

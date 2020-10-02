@@ -731,7 +731,7 @@ visibility: hidden;
 }
 
 .social-icons {
-  font-size: 5vw;
+  font-size: 3vw;
 }
 h1 {
   font-size: 3vw!important;
@@ -886,9 +886,6 @@ font-size: 5vw;
   background-repeat: no-repeat;
   background-size: cover;
 }
-#testimonial{
-  background-color:#FFA947!important;
-}
 .services-img{
   object-fit: scale-down;
 }
@@ -911,6 +908,7 @@ font-size: 5vw;
 }
 .bg-services-inside{
   position: relative;
+  height:20vw;
 }
 #bg-services.bg-employ::before{
   background-image: url(../Img/employment-service.jpg);
@@ -924,3 +922,52 @@ font-size: 5vw;
 #bg-services.bg-events::before{
   background-image: url(../Img/events.jpg);
 }
+
+
+.event-wrap {
+  margin-bottom: 30px;
+  width: 100%; }
+  @media (max-width: 767.98px) {
+    .event-wrap {
+      margin-bottom: 60px; } }
+  .event-wrap .img {
+    width: 100%;
+    display: block;
+    height: unset; }
+    @media (max-width: 767.98px) {
+      .event-wrap .img {
+        width: 100%;
+        height: unset;
+        margin-bottom: 20px; } }
+  .event-wrap .text {
+    width: 100%;
+    background: #F3645E; }
+    @media (max-width: 767.98px) {
+      .event-wrap .text {
+        width: 100%; } }
+    .event-wrap .text h2 {
+      font-size: 30px;
+      margin-bottom: 22px;
+      font-weight: 600; }
+      .event-wrap .text h2 a {
+        color: #000000; }
+    .event-wrap .text .meta p {
+      font-weight: 600;
+      font-size: 17px; }
+      .event-wrap .text .meta p span {
+        display: block;
+        margin-bottom: 10px; }
+        .img, .blog-img, .user-img {
+          width: 100%;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center;
+      }
+      .invisible{
+        visibility: hidden!important;
+      }
+      .service-titles{
+        font-size: 40px;
+    transform: rotate(25deg);
+    padding-top: 50px;
+      }

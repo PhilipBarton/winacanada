@@ -1,0 +1,68 @@
+﻿; Domain: winacanada.org
+; Exported (y-m-d hh:mm:ss): 2020-10-02 06:53:33
+;
+; This file is intended for use for informational and archival
+; purposes ONLY and MUST be edited before use on a production
+; DNS server.
+;
+; In particular, you must update the SOA record with the correct
+; authoritative name server and contact e-mail address information,
+; and add the correct NS records for the name servers which will
+; be authoritative for this domain.
+;
+; For further information, please consult the BIND documentation
+; located on the following website:
+;
+; http://www.isc.org/
+;
+; And RFC 1035:
+;
+; http://www.ietf.org/rfc/rfc1035.txt
+;
+; Please note that we do NOT offer technical support for any use
+; of this zone data, the BIND name server, or any other third-
+; party DNS software.
+;
+; Use at your own risk.
+
+
+; SOA Record
+winacanada.org.	3600	 IN 	SOA	ns73.domaincontrol.com.	dns.jomax.net. (
+					2020100210
+					28800
+					7200
+					604800
+					3600
+					) 
+
+; A Records
+@	600	 IN 	A	159.203.11.104
+
+; CNAME Records
+www	600	 IN 	CNAME	@
+
+; MX Records
+@	3600	 IN 	MX	1	aspmx.l.google.com.
+@	3600	 IN 	MX	10	aspmx2.googlemail.com.
+@	3600	 IN 	MX	10	aspmx3.googlemail.com.
+@	1800	 IN 	MX	10	mx.zoho.com.
+@	1800	 IN 	MX	20	mx2.zoho.com.
+@	3600	 IN 	MX	5	alt1.aspmx.l.google.com.
+@	3600	 IN 	MX	5	alt2.aspmx.l.google.com.
+@	1800	 IN 	MX	50	mx3.zoho.com.
+
+; TXT Records
+@	3600	 IN 	TXT	"google-site-verification=dpyO8-TknTAOzluuLKzq0vxehDEpxrIfkpUoeVfonX0"
+@	1000	 IN 	TXT	"google-site-verification=Yo8bulGHSV2Ow62_LJudYqcIv-T5m7sWG-DLFPyxGjc"
+@	3600	 IN 	TXT	"v=spf1 include:_spf.google.com ~all"
+
+; SRV Records
+
+; AAAA Records
+
+; CAA Records
+
+; NS Records
+@	3600	 IN 	NS	ns73.domaincontrol.com.
+@	3600	 IN 	NS	ns74.domaincontrol.com.
+

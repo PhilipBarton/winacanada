@@ -1,3 +1,30 @@
+
+/* index page */
+.navbar{
+  box-shadow: none!important;
+  -webkit-box-shadow:none!important;
+}
+.img-thumbnail{
+   background-color:transparent!important; 
+    border: none!important;
+}
+.home{
+  position: relative;
+}
+.home::before{
+  background-image: url(../Img/index-background.gif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: scroll;
+   background-size: cover;
+   content: "";
+   position: fixed;
+   top: 0; left: 0;
+   width: 100%; height: 100%;
+   filter: contrast(0.5);
+}
+/*about page*/
+
 .mediaViewInfo {
     --web-view-name: Home 2;
     --web-view-id: Home_2;
@@ -139,13 +166,41 @@ p{
     top: 15px;
   }
 body{
+  position: relative;
     font-family: 'futura'!important;
-    background-color:#228AB6!important;
-    overflow-x: hidden;
-    background-attachment: fixed;
-    background-size: cover;
-    position: relative;
+   margin:0;
+   background-color: rgb(34, 138, 182)!important;
 }
+ #about2{
+   position: relative;
+ }
+ #about2::before{
+   filter: brightness(0.5);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: scroll;
+   background-size: cover;
+   content: "";
+   position: fixed;
+   top: 0; left: 0;
+   width: 100%; height: 100%;
+}
+.about{
+  position: relative;
+}
+.about::before{
+  background-image: url(../Img/image5.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: scroll;
+   background-size: cover;
+   content: "";
+   position: fixed;
+   top: 0; left: 0;
+   width: 100%; height: 100%;
+   filter: brightness(0.5);
+}
+
 #ourservices{
   overflow-y: scroll;
 }
@@ -357,11 +412,11 @@ h2 {
     color:black!important;
 }
 .masthead{
-  background-size: cover;
-  height:100vh;
   position: relative;
-  overflow:hidden;
-
+  width: 100%;
+  height: 80vh;
+  min-height: 35rem;
+  padding: 15rem 0;
 }
 .backimg{
     background-image: url('../Img/image5.jpg');
@@ -396,6 +451,7 @@ div#background {
 }
 a {
     color: #f8f9fa!important;
+
     text-decoration: none;
     background-color: transparent;
 }
@@ -656,7 +712,7 @@ p {
     color:#e6243f;
   }
   .text-blue{
-color:#127cff;
+color:#228AB6;
   }
   .text-pink{
       color:#F03567;
@@ -703,20 +759,10 @@ visibility: hidden;
 .text-black{
   color:black!important;
 }
-#video {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: -webkit-fill-available;
-  z-index: -100;
-  object-fit: fill;
-  filter: contrast(0.4);
-}
+
 @media (min-width: 850px) { 
   footer.page-footer a {
+
     color: #fff;
     line-height: 2vw!important;
     text-align: center!important;
@@ -807,18 +853,7 @@ font-size: 5vw;
 .footer-logo{
   width:30vw!important;
 }
-#video {
-  position: fixed;
-  left: -25vw;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: -webkit-fill-available;
-  z-index: -100;
-  object-fit: fill;
-  filter: contrast(0.4);
-}
+
 }
 .navbar-default{
   background:transparent;
@@ -828,9 +863,9 @@ font-size: 5vw;
   font-family: 'Dawning of a New Day', cursive;
 }
 #our-mission{
-  background-color: #228AB6!important;
-  height: 100%!important;
+  height: 100vh!important;
   background-size: cover;
+  position: relative;
 }
 .icon{
     display: inline-block!important;
@@ -895,6 +930,9 @@ font-size: 5vw;
 .bg-wina-blue{
   background-color: rgb(34, 138, 182);
 }
+.bg-wina-orange{
+background-color: #F3645E;
+}
 #bg-services{
   position: relative;
 }
@@ -921,6 +959,9 @@ font-size: 5vw;
 }
 #bg-services.bg-events::before{
   background-image: url(../Img/events.jpg);
+}
+#bg-services.bg-contact::before{
+  background-image: url(../Img/contact.jpg);
 }
 
 
@@ -971,3 +1012,82 @@ font-size: 5vw;
     transform: rotate(25deg);
     padding-top: 50px;
       }
+#career-head{
+  background-image: url(./Img/image5_p1wchu/image5_p1wchu_c_scale,w_960.jpg);
+  background-repeat: no-repeat;
+}
+video {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.header-txt{
+  position: absolute!important;
+}
+.signup-section {
+  padding: 10rem 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  position: relative;
+}
+.signup-section .form-inline input {
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  padding: 1.25rem 2rem;
+  height: auto;
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  border: 0;
+}
+.fa-2x {
+  font-size: 2em;
+}
+.fa-3x{
+  font-size: 10vw!important;
+}
+.map-container {
+  width: 100%;
+  margin: 0 auto;
+  height: 0;
+  padding-top: 38%;
+  position: relative;
+  display: none;
+  /* Hide for small screens */
+}
+/* Medium Screens */
+@media all and (min-width: 34.375em) {
+  .map-container {
+    display: block;
+  }
+
+  .static-img {
+    display: none;
+  }
+}
+#location{
+  position: relative;
+}
+.footer{
+  position: relative;
+}
+@media (max-width: 500px){
+.vcenter {
+  display: inline-block!important;
+  vertical-align: middle;
+  float: none;
+}
+.contact-img{
+height:0px;
+Width:0px;
+visibility:hidden!important;
+}
+}

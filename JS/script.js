@@ -49,3 +49,4 @@
   
   jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
 })();
+
